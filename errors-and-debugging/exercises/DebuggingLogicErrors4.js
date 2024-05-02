@@ -4,6 +4,8 @@
 // Given the values for fuelLevel, crewStatus and computerStatus, should launchReady be true or false?
 // Is the program behaving as expected?
 
+// launchready should be false due to low fuel and the output expresses both false & true for launchReady. //
+
 let launchReady = false;
 let fuelLevel = 17000;
 let crewStatus = true;

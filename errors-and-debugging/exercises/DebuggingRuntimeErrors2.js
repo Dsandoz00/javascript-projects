@@ -2,11 +2,11 @@ let launchReady = false;
 let fuelLevel = 27000;
 
 if (fuelLevel >= 20000) {
-   console.log('Fuel level cleared.');
-   launchReady = true;
+   console.log("Fuel level cleared.");
+   let launchReady = true;
 } else {
    console.log('WARNING: Insufficient fuel!');
-   launchReady = false;
+   let launchReady = false;
 }
 
 if (launchReady) {
@@ -14,7 +14,7 @@ if (launchReady) {
    console.log("Fed parrot...");
    console.log("6, 5, 4...");
    console.log("Ignition...");
-   consoul.log("3, 2, 1...");
+   console.log("3, 2, 1...");
    console.log("Liftoff!");
 } else {
    console.log("Launch scrubbed.");
