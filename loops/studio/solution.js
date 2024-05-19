@@ -19,9 +19,8 @@ function mealAssembly(protein, grains, veggies, beverages, desserts, numMeals) {
     let meals2 = []
   for (let j = 0; j < pantry.length; j++) {
     
-    meals.push(meals2);
+  meals.push(meals2);
    meals.push(pantry[j][i]);
-   
    console.log(meals[j]);
   }
   }
