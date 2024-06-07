@@ -53,7 +53,7 @@ let waterbear = {
    age: 1,
    astronautID: 5,
    move: function () {return Math.floor(Math.random() * 11)}
-   animalReport: function crewReports() {
+   crewReports () {
       return (`'${name} is a ${species}. They are ${age} years old and ${mass} kilograms. Their ID is ${astronautID}.'`);
 };
 
