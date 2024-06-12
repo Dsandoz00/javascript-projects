@@ -1,18 +1,33 @@
 // Code your selectRandomEntry function here:
 let randomIdArr = [];
 function selectRandomEntry(arr){
- // let randomIdArr = [];
   let index = Math.floor(Math.random() * arr.length);
-  if(!randomIdArr.includes(index)){
-   randomIdArr.push(arr[index]);
-  }
-  return randomIdArr;
+  return arr[index];
 }
+//This function selects random datat from an empty array 
+
+//This function makes it so that there is a random number selected from the array 0 to 1 but rounding to the nearet integer + the length of the array
+let emptyRandomArr = [];
+while (emptyRandomArr.length < 3) {
+  let idCheck = selectRandomEntry(idNumbers);
+  if (!emptyRandomArr.includes(idCheck)) {
+    randomIdArr.push(idCheck);
+  }
+}
+//This loop is making sure that each number is a unique number every time it is randomly selected
 
 // Code your buildCrewArray function here:
-function buildCrewArray(){
 
+function buildCrewArray(emptyRandomArr, animals){
+let crew = [];
+for (let i = 0; i < 3; ++1) {
+  if (emptyRandomArr.includes(animals[i].idCheck)) {
+    crew.push(animals[1]);
+  }
 }
+return crew;
+}
+
 
 
 let idNumbers = [291, 414, 503, 599, 796, 890];
@@ -62,16 +77,7 @@ let candidateF = {
 };
 
 let animals = [candidateA,candidateB,candidateC,candidateD,candidateE,candidateF];
-for(let i = 0; i < 3; i++){
-  
-   console.log(selectRandomEntry(idNumbers));
-
-}
-
-//if(randomIdNumbers.include)
-
-//console.log(randomIdArr);
-
-
 
 // Code your template literal and console.log statements:
+
+console.log(`${crew[0].name}, ${crew[1].name} and ${crew[2].name} are going to space! `);
