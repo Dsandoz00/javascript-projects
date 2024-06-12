@@ -34,3 +34,6 @@ function printTestScores(index,test,students,scores){
   }
   return;
 }
+
+module.exports = printAll;
+// In this part I took the function printAll and exported it into a object for a more efficient use in this project//
